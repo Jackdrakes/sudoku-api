@@ -4,4 +4,4 @@ __pycache__/
 .venv
 
 # environment variables
-.envj
+.env
