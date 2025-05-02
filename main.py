@@ -4,7 +4,11 @@ import random
 import numpy as np
 from sudoku import generate_sudoku
 
-app = FastAPI()
+app = FastAPI(
+    docs_url=None,         # Disable Swagger UI at /docs
+    redoc_url=None,        # Disable ReDoc at /redoc
+    openapi_url=None       # Disable OpenAPI schema at /openapi.json
+)
 
 @app.get("/")
 def read_root():
